@@ -14,7 +14,4 @@
 	order by Customer_Id
 
 2.4* Соотнесите записи из таблицы Customers по городу (если Вася и Петя из одного города, они должны быть выведены в одной строке). Для поиска решения прочитайте про Self Join.
-	select a.LastName, b.LastName
-	from Customers a, Customers b
-	where a.adress=b.adress
-	and a.adress = 'РБ' and a.LastName<>b.LastName
+	SELECT a.First_name, a.Last_name, b.First_name, b.Last_name, a.Adress from Customers_2 a, Customers_2 b where a.Customer_ID <> b.Customer_ID and a.Adress = b.Adress order by a.Adress
