@@ -1,0 +1,12 @@
+2.1 Выбрать с сортировкой по убыванию значения поля Price из таблицы Orders, значение Price которых больше 5000 и для которых нет связанных данных в Customers
+
+     SELECT Price from Orders order by Price DESC
+
+     SELECT Price from Orders where Price > 5000 and Customer_ID is NULL ORDER by Price 
+	 
+	 
+2.2 Выбрать с сортировкой по возрастанию значения поля Price из таблицы Orders, значение Price которых больше 5000 и для которых есть связанные данные в Customers
+     
+	 SELECT Price from Orders order by Price ASC
+
+     SELECT Price from Orders where Price > 5000 and Customer_ID IN (SELECT Customer_ID from Customers_2) ORDER by Price 
