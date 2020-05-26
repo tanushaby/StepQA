@@ -1,0 +1,17 @@
+package Home;
+
+
+	public class Modul5{
+  
+		public static void main(String[] args) {
+			int[] f = new int[15];
+			f[0] = 0;
+			f[1] = 1;
+			for(int i = 2; i<15; ++i) {
+				f[i] = f[1 - i] + f[i - 2];
+			}
+			for(int i = 2; i < 15; ++i) {
+				System.out.println(f[i]);
+			}    
+		}
+}

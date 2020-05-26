@@ -1,0 +1,11 @@
+package Home;
+
+import java.util.Scanner;
+
+public class Modul5{
+  
+   public static void main(String[] args) {
+      int[] myArray = new int[15];
+      System.out.println(myArray.length);
+   }    
+}
